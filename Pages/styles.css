@@ -1,0 +1,180 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+}
+
+header {
+    background-color: gold;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 125px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.intro, .products, .cta, .promo, .history, .our-bees, .our-honey, .team, .nutritional-info, .contact-form, .order-form, .location, .faq {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: black;
+    margin: 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+}
+
+.cta button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;   
+    transition: background-color 1s;
+}
+.cta button form button:hover 
+{
+    background-color: red;
+}
+
+.cta button:hover {
+    background-color: #555;
+}
+
+.promo .hover-box {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #eee;
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.promo .hover-box:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.promo .hover-box::before {
+    content: '🎁';
+}
+
+.promo .hover-box:hover::before {
+    content: 'Get 15% off with (Bee Natural) code';
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.contact-form form, .order-form form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contact-form form label, .order-form form label {
+    margin: 10px 0 5px;
+}
+
+.contact-form form input, .contact-form form textarea, .order-form form input, .order-form form select {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: black;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+.order-form form button {
+    align-self: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form form button:hover, .order-form form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
